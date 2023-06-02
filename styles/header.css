@@ -1,0 +1,162 @@
+.header-menu {
+  width: 48px;
+  height: 48px;
+  background-image: url(../assets/Menu.svg);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container__buttom:checked ~ .container__hover > .header-menu {
+  background-image: url("../assets/Menu\ Aberto.svg");
+}
+
+.container__buttom:checked ~ .container__hover {
+  background: var(--bluegradient);
+}
+
+header {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container__img {
+  padding: 1em;
+}
+
+.list-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 17em;
+}
+
+.list-menu__item:hover {
+  background: var(--bluegradient);
+}
+
+.list-menu__item:hover > .list-menu__link {
+  text-decoration: none;
+  -webkit-text-fill-color: var(--white);
+}
+
+.container__buttom:checked ~ .list-menu {
+  display: block;
+  width: auto;
+}
+.container__buttom {
+  display: none;
+}
+
+.list-menu__title,
+.list-menu__item {
+  padding: 1em;
+  background-color: var(--white);
+}
+
+.list-menu__title {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.list-menu__link {
+  background: var(--bluegradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.container__title {
+  display: none;
+}
+
+.options {
+  display: none;
+}
+
+.container__text {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container__title,
+  .container__title-bold {
+    font-family: var(--font-sec);
+    font-size: 30px;
+  }
+  .container__title {
+    font-weight: 400;
+    display: block;
+  }
+
+  .container__title-bold {
+    font-weight: 700;
+  }
+
+  .options {
+    display: flex;
+  }
+
+  .options-item {
+    padding: 0 1em;
+    text-transform: uppercase;
+  }
+
+  .options__link {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  .favoritos__img {
+    display: none;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .options__buttom:checked ~ .list-menu {
+    display: block;
+    width: auto;
+  }
+  .options__buttom {
+    display: none;
+  }
+}
+
+.options__buttom:checked ~ .options__hover > .options-item {
+  background: var(--bluegradient);
+  color: var(--white);
+}
+
+.options-item {
+  padding: 1em;
+}
+@media screen and (min-width: 1728px) {
+  .container__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+    padding-left: 2em;
+  }
+
+  .container__text {
+    display: block;
+  }
+
+  .header {
+    padding: 0 2em;
+  }
+
+  .options {
+    margin-right: auto;
+  }
+}

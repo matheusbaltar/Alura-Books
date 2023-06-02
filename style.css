@@ -1,0 +1,26 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/box.css");
+@import url("styles/topics.css");
+@import url("styles/contacts.css");
+@import url("styles/footer.css");
+
+:root {
+  --backgroundcolor: #c4c4c4;
+  --white: #ffffff;
+  --orange: #eb9b00;
+  --bluegradient: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --font-prin: "poppins";
+  --fundohover: #4072b3;
+  --bluetext: #053255;
+  --font_sec: "Josefin Sans";
+  --black: black;
+  --links: #474646;
+}
+body {
+  background-color: var(--backgroundcolor);
+  font-family: var(--font-prin);
+  font-size: 16px;
+  font-weight: 400;
+}
